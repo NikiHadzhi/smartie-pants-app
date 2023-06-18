@@ -1,0 +1,13 @@
+.card {
+  margin: 25px auto;
+}
+
+.card-header {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.header {
+  margin-top: 20px;
+  text-align: center;
+}

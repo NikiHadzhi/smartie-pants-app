@@ -1,0 +1,16 @@
+<h1 class="header">Highest revenue Waterfall</h1>
+<div class="card" style="width: 80%">
+  <div class="card-header">
+    Waterfall Id: {{ this.waterfall.waterfallId }} | SUM:
+    {{ this.waterfall.sumOfRates }}
+  </div>
+  <ul
+    class="list-group list-group-flush"
+    *ngFor="let instance of this.waterfall.instances"
+  >
+    <li class="list-group-item">Id: {{ instance.id }}</li>
+    <li class="list-group-item">Name: {{ instance.name }}</li>
+    <li class="list-group-item">AdNetwork: {{ instance.adNetwork }}</li>
+    <li class="list-group-item">Rate: {{ instance.rate }}</li>
+  </ul>
+</div>

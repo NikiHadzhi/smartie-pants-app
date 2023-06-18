@@ -1,0 +1,23 @@
+<h1 class="my-4 text-center">Instances collection</h1>
+<div class="table-responsive">
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Instance - Id</th>
+        <th>Name</th>
+        <th>AdNetwork</th>
+        <th>Rate</th>
+        <th>Waterfall - Id</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let instance of this.instances">
+      <tr>
+        <th scope="row">{{ instance.id }}</th>
+        <td>{{ instance.name }}</td>
+        <td>{{ instance.adNetwork }}</td>
+        <td>{{ instance.rate }}</td>
+        <td>{{ instance.waterfallId }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
